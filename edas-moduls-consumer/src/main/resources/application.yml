@@ -1,0 +1,23 @@
+server:
+  port: 88
+  tomcat:
+    uri-encoding: UTF-8
+
+
+spring:
+  application:
+    name: edas-moduls-consumer
+  # \u670D\u52A1\u53D1\u73B0\u9884\u6CE8\u518C
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+
+
+#feign\u7684\u8BF7\u6C42\u914D\u7F6E
+feign :
+  httpclient :
+    enabled : true
+

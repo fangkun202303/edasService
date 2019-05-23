@@ -1,0 +1,14 @@
+server:
+  port: 80
+
+spring:
+  application:
+   name: edas-moduls-provider
+
+  # 服务发现预注册
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+edasmodulsprovider: "这是提供者"

@@ -1,0 +1,18 @@
+server:
+  port: 888
+
+spring:
+  application:
+    name: edas-dubbo-provider
+dubbo:
+  application:
+    name: edas-dubbo-provider
+    version: 1.0.0
+  registry:
+    address: edas://127.0.0.1:8080
+  provider:
+    host: 127.0.0.1
+    export: true
+  scan:
+    base-packages: com.moduls.edasdubboprovider.service
+

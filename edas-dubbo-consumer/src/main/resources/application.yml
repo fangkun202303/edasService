@@ -1,0 +1,17 @@
+server:
+  port: 82
+
+spring:
+  application:
+    name: edas-dubbo-consumer
+
+dubbo:
+  application:
+    name: edas-dubbo-consumer
+    version: 1.0.0
+  protocol:
+    port: 20880
+    name: dubbo
+  registry:
+    address: edas://127.0.0.1:8080
+
